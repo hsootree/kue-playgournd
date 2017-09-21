@@ -7,9 +7,16 @@ const upload = multer()
 app.set('view engine', 'ejs')
 
 app.get('/', (req, res) => {
-  res.render('index.ejs')
-})
-
+    res.render('index.ejs')
+  })
+  /**
+   * jsdoc 사용.
+   * 
+   * 
+   * 
+   * 
+   * 
+   */
 app.post('/', upload.single('photo'), (req, res) => {
   sharp(req, file, buffer)
     .resize(200, 200)
