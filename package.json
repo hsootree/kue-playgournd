@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "file-type": "^6.1.0"
+    "file-type": "^6.1.0",
+    "kue": "^0.11.6"
   }
 }
